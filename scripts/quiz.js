@@ -121,6 +121,46 @@ let quiz = [
             "Więźniowie polityczni"
         ],
         correct: 1
+    },
+    {
+        content: "Kto był odpowiedzialny za Zbrodnię Wołyńską?",
+        answers: [
+            "Armia Czerwona",
+            "Niemcy",
+            "Ukraińska Armia Powstańcza (UPA)",
+            "Polska Armia Krajowa (AK)"
+        ],
+        correct: 2
+    },
+    {
+        content: "Jaka była skala ofiar Zbrodni Wołyńskiej?",
+        answers: [
+            "Około 10 tysięcy",
+            "Około 50 tysięcy",
+            "Około 100 tysięcy",
+            "Około 500 tysięcy"
+        ],
+        correct: 2
+    },
+    {
+        content: "W którym roku rozpoczęły się masowe mordy podczas Zbrodni Wołyńskiej?",
+        answers: [
+            "1940",
+            "1941",
+            "1942",
+            "1943"
+        ],
+        correct: 3
+    },
+    {
+        content: "Jakie było główne zaangażowanie OUN-UPA w zbrodnie?",
+        answers: [
+            "Wymordowanie i wypędzenie Polaków",
+            "Walka o niepodległość Ukrainy",
+            "Obrona przed niemiecką okupacją",
+            "Walka z Armią Czerwoną"
+        ],
+        correct: 0
     }
 ]
 
