@@ -53,7 +53,8 @@ $(function () {
         quiz[question_id].answers.forEach((answer, answerIndex) => {
             let answerElement = answer_t
                 .replace(/{{value}}/ig, answerIndex)
-                .replace(/{{content}}/ig, answer);
+                .replace(/{{content}}/ig, answer)
+                .replace(/{{name}}/ig, "question" + question_id + "_answer");
             answers += answerElement;
         });
 
