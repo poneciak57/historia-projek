@@ -1,42 +1,126 @@
 
-const QUESTION_COUNT = 3;
+const QUESTION_COUNT = 4;
 
 let quiz = [
     {
-        content: "tresc 1",
+        content: "Na co wskazuje sposób przeprowadzania przez Niemców pacyfikacji wsi?",
         answers: [
-            "cos tam 1",
-            "cos tam 2",
-            "cost tam 3"
+            "Zbrojne stłumienie buntu",
+            "Likwidacja konkretnych punktów",
+            "Zaplanowana działalność eksterminacyjna",
+            "Brak stawiania oporu przez zaatakowanych"
         ],
-        correct: 0
+        correct: 2
     }, 
     {
-        content: "tresc 2",
+        content: "Jakie były przyczyny pacyfikacji polskich wsi?",
         answers: [
-            "cos tam 1",
-            "cos tam 2",
-            "cost tam 3"
+            "Celowa polityka okupanta",
+            "Doniesienia o wsparciu dla ruchu oporu",
+            "Prawdziwe i fałszywe informacje",
+            "Wszystkie wymienione odpowiedzi"
+        ],
+        correct: 3
+    },
+    {
+        content: "Gdzie w późniejszym okresie wojny szczególnie często występowały pacyfikacje polskich wsi?",
+        answers: [
+            "Ziemia świętokrzyska",
+            "Zamojszczyzna",
+            "Wawer",
+            "Torzeńec"
         ],
         correct: 1
     },
     {
-        content: "tresc 3",
+        content: "Jak ocenić skalę pacyfikacji polskich wsi przez Niemców?",
         answers: [
-            "cos tam 1",
-            "cos tam 2",
-            "cost tam 3"
+            "Około 100 wsi padło ofiarą represji",
+            "Około 500 wsi padło ofiarą represji",
+            "Około 800-900 wsi padło ofiarą represji",
+            "Ponad 1000 wsi padło ofiarą represji"
         ],
         correct: 2
     },
     {
-        content: "tresc 4",
+        content: "Jakie było główne powód dla zbrodni katyńskiej?",
         answers: [
-            "cos tam 1",
-            "cos tam 2",
-            "cost tam 3"
+            "Zapewnienie bezpieczeństwa polskim jeńcom wojennym",
+            "Eliminacja polskiej inteligencji i potencjalnej opozycji",
+            "Ochrona praw człowieka i demokracji",
+            "Zaspokojenie niemieckich żądań"
+        ],
+        correct: 1
+    },
+    {
+        content: "Kto przeprowadził egzekucje w ramach zbrodni katyńskiej?",
+        answers: [
+            "Niemieccy okupanci",
+            "Polskie oddziały partyzanckie",
+            "Sowiecka policja polityczna NKWD",
+            "Ukraińscy nacjonaliści"
+        ],
+        correct: 2
+    },
+    {
+        content: "Jakie było stanowisko Związku Radzieckiego w sprawie zbrodni katyńskiej po odkryciu masowych grobów przez Niemców?",
+        answers: [
+            "Przyznanie odpowiedzialności NKWD za masakrę",
+            "Zaprzeczenie odpowiedzialności i oskarżenie Niemców",
+            "Współpraca z międzynarodową komisją śledczą",
+            "Złożenie przeprosin Polsce"
+        ],
+        correct: 1
+    },
+    {
+        content: "Kiedy ujawniono dokumenty potwierdzające odpowiedzialność NKWD za zbrodnię katyńską?",
+        answers: [
+            "W 1990 roku po rozpadzie Związku Radzieckiego",
+            "W 1943 roku, po odkryciu grobów przez Niemców",
+            "W 1945 roku po zakończeniu II wojny światowej",
+            "W 1960 roku po traktacie polsko-radzieckim"
         ],
         correct: 0
+    },
+    {
+        content: "Jakie było dokładne miejsce położenia obozu Auschwitz-Birkenau?",
+        answers: [
+            "Kraków, Polska",
+            "Monachium, Niemcy",
+            "Oświęcim, Polska",
+            "Berlin, Niemcy"
+        ],
+        correct: 2
+    },
+    {
+        content: "Jak nazywał się dowódca obozu Auschwitz-Birkenau?",
+        answers: [
+            "Adolf Eichmann",
+            "Heinrich Himmler",
+            "Rudolf Höss",
+            "Joseph Mengele"
+        ],
+        correct: 2
+    },
+    {
+        content: "Jaka metoda została głownie stosowana do mordowania więźniów w Auschwitz-Birkenau?",
+        answers: [
+            "Zastrzyki trucizną",
+            "Powieszenie",
+            "Strzał w tył głowy",
+            "Komory gazowe"
+        ],
+        correct: 3
+    },
+    {
+        content: "Która z tych grup więźniów była zazwyczaj kierowana bezpośrednio do komór gazowych po przybyciu do Auschwitz-Birkenau?",
+        answers: [
+            "Kobiety w ciąży",
+            "Dzieci",
+            "Mężczyźni",
+            "Więźniowie polityczni"
+        ],
+        correct: 1
     }
 ]
 
@@ -46,7 +130,7 @@ $(function () {
 
     let quiz_d = $("#quiz");
 
-    generateRandomUniqueNumbers(QUESTION_COUNT, quiz.length-1).forEach(question_id => {
+    generateRandomUniqueNumbers(QUESTION_COUNT, quiz.length-1).forEach((question_id, index) => {
 
         let answers = "";
 
@@ -59,7 +143,7 @@ $(function () {
         });
 
         let questionElement = question_t
-            .replace(/{{content}}/ig, quiz[question_id].content)
+            .replace(/{{content}}/ig, (index + 1) + ". " + quiz[question_id].content)
             .replace(/{{correct}}/ig, quiz[question_id].correct)
             .replace(/{{answers}}/ig, answers);
 
