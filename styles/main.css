@@ -1,0 +1,124 @@
+@font-face {
+     font-family: 'Franklin Gothic';
+     src: url('../assets/fonts/FranklinGothic.ttf') format('opentype');
+}
+
+@font-face {
+     font-family: 'Old Newspaper';
+     src: url('../assets/fonts/OldNewspaperTypes.ttf') format('opentype');
+}
+
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     box-sizing: border-box;
+}
+
+.d-flex {
+     display: flex;
+}
+
+.main_padding {
+     padding: 45px 70px;
+}
+
+.landing_view {
+     min-height: 100vh;
+     background-image: url("../assets/background.webp");
+     background-size: cover;
+}
+
+.navbar {
+     justify-content: space-between;
+     align-items: center;
+     padding-right: 5px;
+}
+
+.hr1 {
+     border: 0;
+     border-top: 3px solid #767368;
+     margin-top: 20px;
+}
+
+.hr2 {
+     border: 0;
+     border-bottom: 1px solid #767368;
+     padding-top: 5px;
+}
+
+
+.nav-items {
+     gap: 100px;
+}
+
+.main_content {
+     position: relative;
+     justify-content: space-between;
+     align-items: center;
+     height: 73vh;
+     padding: 0 50px;
+}
+
+.main_text {
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.cannon {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 700px;
+}
+
+.main_header {
+     font-family: 'Franklin Gothic', sans-serif;
+     font-size: 60px;
+     text-transform: uppercase;
+     letter-spacing: 0.04em;
+}
+
+.main_par {
+     font-family: 'Old Newspaper', sans-serif;
+     width: 70%;
+     text-align: justify;
+}
+
+.nav-items span {
+     font-family: 'Old Newspaper', sans-serif;
+     font-size: 18px;
+}
+
+h1,
+p,
+.nav-items span {
+     background: url(../assets/texture.webp) no-repeat center center;
+     background-size: cover;
+     color: #fff;
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     background-clip: text;
+}
+
+@media(max-width: 1200px) {
+     .cannon {
+          display: none;
+     }
+
+     .main_text {
+          width: 100%;
+     }
+}
+
+@media(max-width: 800px) {
+     .main_padding {
+          padding: 30px;
+     }
+}
