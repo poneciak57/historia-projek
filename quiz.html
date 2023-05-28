@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="stylesheet" href="styles/quiz.css" />
 
     <!-- SCRIPTS -->
     <script
@@ -17,25 +17,27 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="scripts/quiz.js" defer></script>
-
-</head>
-<body>
-    <div id="quiz">
-
-    </div>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="quiz-title">Teraz czas przetestowac twoja wiedze</h1>
+      <div id="quiz"></div>
+    </main>
 
     <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
     <script id="answer-template" type="template">
-        <input type="radio" name="{{name}}" class="answer-input" value="{{value}}"> {{content}} </br>
+      <div class="answer-wrapper">
+        <input type="radio" name="{{name}}" class="answer-input" value="{{value}}"><span>{{content}}</span></br>
+      </div>
     </script>
 
     <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
     <script id="question-template" type="template">
-        <div class="question-wrapper">
-            <div class="question-content">{{content}}</div>
-            <div class="question-answers">{{answers}}</div>
-            <div class="correct-answer" style="visibility: hidden;">{{correct}}</div>
-        </div>
+      <div class="question-wrapper">
+          <div class="question-content"><p>{{content}}<p></div>
+          <div class="question-answers">{{answers}}</div>
+          <div class="correct-answer">{{correct}}</div>
+      </div>
     </script>
-</body>
+  </body>
 </html>
