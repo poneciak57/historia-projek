@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- STYLES -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
 
   <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
   <script src="scripts/main.js"></script>
 
 
@@ -29,8 +32,8 @@
         <div class="kurier_war"></div>
 
         <div class="d-flex nav-items">
-          <span>Zbrodnie wojenne</span>
-          <span>Quiz</span>
+          <span id="link-zbrodnie">Zbrodnie wojenne</span>
+          <span onclick="window.location.href='quiz.html';">Quiz</span>
         </div>
 
       </header>
@@ -39,10 +42,10 @@
 
       <main class="d-flex main_content">
         <div class="main_text">
-          <h1 class="main_header">Zbrodnie wojenne popełnione na społeczenstwie polskim</h1>
+          <h1 class="main_header">Zbrodnie wojenne popełnione na ludnosci polskiej</h1>
           <p class="main_par">"Sytuacja jest zupełnie jasna, tak jasna, że dla nikogo na całym świecie nie może
             pozostawiać najmniejszej
-            wćtpliwości. Nie będzie wojny o Gdańsk, będzie to wojna o panowanie Niemców nad Światem"</p>
+            wątpliwości. Nie będzie wojny o Gdańsk, będzie to wojna o panowanie Niemców nad Światem"</p>
         </div>
         <img src="./assets/cannon.webp" class="cannon" alt="">
       </main>
@@ -52,7 +55,232 @@
   </section>
 
 
+  <section class="sec_map">
+    <div id="map-wrapper">
+      <div id="map-container">
+        <img src="./assets/map_poland.webp" alt="Mapka" id="map-image">
+        <img src="./assets/pin_red.svg" class="pin katyn" data-bs-toggle="offcanvas" href="#offcanvasKatyn"
+          role="button" aria-controls="offcanvasKatyn" alt="katyn">
+        <img src="./assets/pin_red.svg" class="pin oswiecim" data-bs-toggle="offcanvas" href="#offcanvasOswiecim"
+          role="button" aria-controls="offcanvasOswiecim alt=" oswiecim">
+        <img src="./assets/pin_red.svg" class="pin wolyn" data-bs-toggle="offcanvas" href="#offcanvasWolyn"
+          role="button" aria-controls="offcanvasWolyn" alt="wolyn">
+        <img src="./assets/pin_red.svg" class="pin skloby" data-bs-toggle="offcanvas" href="#offcanvasSkloby"
+          role="button" aria-controls="offcanvasSkloby" alt="skloby">
+      </div>
 
+    </div>
+
+  </section>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasKatyn" aria-labelledby="offcanvasExampleLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <img src="./assets/articles/katyn1.webp" class="katyn1_img" alt="">
+    <div class="content">
+      <h3>Zbrodnia katynska</h3>
+      <p>Zbrodnia katyńska była masowym mordem dokonanym przez radzieckie władze komunistyczne na tysiącach polskich
+        oficerach, urzędnikach, intelektualistach i więźniach wojennych w czasie II wojny światowej. Nazwa "Katyń"
+        odnosi
+        się do miejscowości Katyń w Rosji, gdzie odkryto jedno z kilku miejsc masowych grobów.</p>
+      <p>
+        W kwietniu i maju 1940 roku NKWD, radziecka policja polityczna, przeprowadziła tajne egzekucje przeciwko polskim
+        jeńcom wojennym przetrzymywanym w obozach w Kozielsku, Ostaszkowie i Starobielsku. Szacuje się, że ofiarą
+        zbrodni
+        katyńskiej padło około 22 000 osób, głównie polskich oficerów. Egzekucje były częścią radzieckiego planu
+        eliminacji inteligencji i potencjalnej opozycji przeciwko sowieckiemu reżimowi.
+      </p>
+      <p>Po zakończeniu wojny, w 1943 roku, Niemcy odkryli masowe groby w Katyniu i zaprosili międzynarodową komisję,
+        która stwierdziła, że ofiary zostały zamordowane przez radzieckie służby bezpieczeństwa. Jednak Związek
+        Radziecki
+        kategorycznie zaprzeczył swojej odpowiedzialności, sugerując, że masakrę popełnili Niemcy podczas swojej
+        okupacji.
+        Propagandowa dezinformacja ze strony ZSRR utrzymała się przez dziesięciolecia.</p>
+    </div>
+    <img src="./assets/articles/katyn2.webp" alt="">
+    <div class="content">
+      <p>Dopiero w 1990 roku, po rozpadzie Związku Radzieckiego, przywódca Michaił Gorbaczow ujawnił dokumenty, które
+        jednoznacznie potwierdzały odpowiedzialność NKWD za zbrodnię katyńską. W 1992 roku Rosja oficjalnie uznała, że
+        to
+        sowiecka policja polityczna była winna tej masakry. Od tego czasu przeprowadzono dalsze dochodzenia, które
+        potwierdziły zakres i okoliczności zbrodni katyńskiej.</p>
+
+      <p>Zbrodnia katyńska stanowiła jedno z najbardziej traumatycznych wydarzeń w historii Polski i naruszyła
+        polsko-radzieckie stosunki na dziesięciolecia. Do dzisiaj jest pamiętana jako symbol sowieckiego represyjnego
+        aparatu i łamania praw człowieka. Co roku, 13 kwietnia, obchodzony jest Dzień Pamięci Ofiar Zbrodni Katyńskiej,
+        aby uczcić pamięć ofiar i upamiętnić to tragiczne wydarzenie.</p>
+    </div>
+    <img src="./assets/articles/katyn3.webp" alt="">
+
+  </div>
+
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasOswiecim" aria-labelledby="offcanvasExampleLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <img src="./assets/articles/auschwitz1.webp" class="katyn1_img" alt="">
+    <div class="content">
+      <h3>Oboz Auschwitz-Birkeanu</h3>
+      <p>Obozy koncentracyjne stanowiły brutalną formę prześladowania Polaków podczas II wojny światowej. Wielu Polaków
+        znalazło się w obozach, gdzie byli poddawani nieopisanej okrucieństwu i terrorowi. Obozy koncentracyjne były
+        miejscem, w którym Polacy byli poddawani ekstremalnym warunkom życia. Więźniowie byli przetrzymywani w ciasnych,
+        przeludnionych barakach, które pozbawione były podstawowych warunków higieny. Brakowało wody, a latryny były
+        zanieczyszczone. Warunki te sprzyjały rozprzestrzenianiu się chorób, a więźniowie cierpieli z powodu
+        wyniszczenia organizmu z powodu niewystarczającego odżywiania.W obozach koncentracyjnych Polacy byli zmuszani do
+        ciężkiej pracy przymusowej, wyzyskiwani przez nazistowskich oprawców. Byli zmuszani do wykonywania
+        wyczerpujących prac fizycznych, często przy minimalnym odżywianiu i brutalnym traktowaniu. Oprócz tego,
+        więźniowie byli poddawani torturom, eksperymentom medycznym oraz masowym egzekucjom.Obozy koncentracyjne służyły
+        również jako miejsce eksterminacji Polaków.</p>
+      <p>
+        Wielu Polaków, w tym więźniowie polityczni, intelektualiści,
+        duchowni oraz członkowie ruchu oporu, trafiało do obozów, gdzie byli mordowani w komorach gazowych lub zabijani
+        przez rozstrzelanie. Obozy koncentracyjne stanowiły jedno z najbardziej mrocznych i tragicznych rozdziałów
+        historii Polski. Upamiętnienie ofiar oraz pamięć o tych wydarzeniach są niezwykle ważne, aby zapobiec
+        powtórzeniu się podobnych tragedii..
+      </p>
+    </div>
+    <img src="./assets/articles/auschwitz2.webp" alt="">
+    <div class="content">
+      <h4>Obóz w Auschitz-Birkenau</h4>
+
+      <p>Lokalizacja: Oświęcim, położony w okupowanej przez nazistowskie Niemcy Polsce.</p>
+      <p>Data utworzenia: Auschwitz I powstało w 1940 roku, a Auschwitz II-Birkenau rozbudowano w 1941 roku.</p>
+      <p>Cel utworzenia: Przeznaczony głównie do eksterminacji ludności żydowskiej, ale także Polaków, Romów, więźniów
+        politycznych i innych grup uznanych za wrogie przez nazistów.</p>
+
+      <h6>Warunki zycia</h6>
+
+      <p>• Przepełnienie: Obozy były przepełnione więźniami, którzy byli zmuszani do mieszkania w niewielkich barakach.
+      </p>
+      <p>• Praca przymusowa: Więźniowie byli zmuszani do ciężkiej i wykańczającej pracy fizycznej.</p>
+      <p>• Brak higieny: Warunki sanitarne były fatalne, brakowało wody, a latryny były nieczyste.</p>
+      <p>• Niewystarczające odżywianie: Więźniowie otrzymywali niewielkie porcje jedzenia, co prowadziło do powszechnej
+        choroby i wyniszczenia organizmu.</p>
+      <p>• Tortury i egzekucje: Więźniowie byli poddawani systematycznym torturom, eksperymentom medycznym i masowym
+        egzekucjom.</p>
+
+      <h6>Proces selekcji</h6>
+      <p>• Po przybyciu do Auschwitz-Birkenau więźniowie byli poddawani selekcji przez SS-manów.</p>
+      <p>• Osoby zdolne do pracy były kierowane do obozu pracy, podczas gdy dzieci, starsi, kobiety w ciąży i osoby
+        niezdolne do pracy były wysyłane bezpośrednio do komór gazowych</p>
+      <h6>Liczba ofiar</h6>
+      <p>• Szacuje się, że w Auschwitz-Birkenau zamordowano około 1,1 miliona osób, głównie Żydów, ale także Polaków i
+        innych więźniów.</p>
+    </div>
+    <img src="./assets/articles/auschwitz3.webp" alt="">
+    <div class="content">
+      <p>Miejsca zagłady, takie jak Auschwitz-Birkenau, są niezwykle ważne dla pamięci narodowej i historii ludzkości.
+        Są one miejscami, w których dokonano okrutnych zbrodni i znieważyły się podstawowe wartości ludzkiej godności.
+        Szacunek i pamięć są nieodzowne dla tych miejsc, abyśmy mogli uczyć się z przeszłości i zapobiec powtórzeniu się
+        takiego ludobójstwa.
+      </p>
+      <p>
+        Niestety, niektóre przypadki, w których ludzie robią sobie zdjęcia w miejscach zagłady, są nieodpowiednie i
+        obraźliwe. Takie działania nie tylko lekceważą tragedię, ale również obrażają pamięć ofiar i ich rodzin.
+        Pokazywanie braku szacunku wobec tych miejsc jest niemoralne i nieodpowiedzialne.</p>
+    </div>
+    <img src="./assets/articles/auschwitz4.webp" alt="">
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWolyn" aria-labelledby="offcanvasExampleLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <img src="./assets/articles/wolyn3.webp" class="katyn1_img" alt="">
+    <div class="content">
+      <h3>Wołyn</h3>
+      <p>W latach 1943-1945 doszło do zbrodni wołyńskiej, w której oddziały Ukraińskiej Armii Powstańczej (UPA) oraz
+        miejscowa ludność ukraińska zamordowali około 100 tysięcy Polaków na terenach Wołynia i Galicji Wschodniej.
+        Zbrodnia ta, znana jako Zbrodnia Wołyńska, została przeprowadzona w skoordynowanym ataku na polskich mieszkańców
+        150 miejscowości. Sprawcami były frakcje Organizacji Ukraińskich Nacjonalistów podporządkowane Stepanowi
+        Bandera, Ukraińska Powstańcza Armia oraz miejscowa ludność ukraińska.</p>
+      <p>Zbrodnia wołyńska była wynikiem celowego zamiaru wymordowania i wypędzenia Polaków. Pierwszy masowy mord na
+        ludności polskiej miał miejsce w lutym 1943 roku, a nasilenie zbrodni nastąpiło w lipcu tego samego roku. W
+        ciągu kilku dni zamordowano około 10-11 tysięcy Polaków, a wiele kościołów katolickich zostało spalonych i
+        zburzonych. Zbrodnie na Polakach dokonywano w różnych miejscach na Wołyniu, przy użyciu brutalnych metod, takich
+        jak palenie żywcem, wrzucanie do studni, tortury i gwałty.</p>
+
+    </div>
+    <img src="./assets/articles/wolyn2.webp" alt="">
+    <div class="content">
+
+
+      <p>UPA atakowała również bazy samoobrony polskiej na Wołyniu, gdzie schroniła się polska ludność. Pomoc dla
+        samoobrony polskiej udzielali partyzanci sowieccy, żołnierze węgierscy oraz Niemcy, co pozwalało niektórym
+        Polakom uniknąć śmierci. Wiele osób uciekało do miast kontrolowanych przez wojsko niemieckie lub zostało
+        wywiezionych na przymusowe roboty do Niemiec.</p>
+      <p>
+        Zbrodnia wołyńska nie ograniczała się tylko do Wołynia, ale objęła również inne regiony, takie jak Galicja
+        Wschodnia, Lubelskie i Polesie. Masowe mordy na ludności polskiej rozpoczęły się jesienią 1943 roku. UPA
+        prowadziła również "antypolską akcję" w Galicji Wschodniej, w której zamierzano zmusić Polaków do opuszczenia
+        domów pod groźbą śmierci.
+      </p>
+    </div>
+    <img src="./assets/articles/wolyn1.webp" alt="">
+    <div class="content">
+      <p>
+      <p>Zbrodnia wołyńska była wynikiem celowego zamiaru wymordowania i wypędzenia Polaków. Pierwszy masowy mord na
+        ludności polskiej miał miejsce w lutym 1943 roku, a nasilenie zbrodni nastąpiło w lipcu tego samego roku. W
+        ciągu kilku dni zamordowano około 10-11 tysięcy Polaków, a wiele kościołów katolickich zostało spalonych i
+        zburzonych. Zbrodnie na Polakach dokonywano w różnych miejscach na Wołyniu, przy użyciu brutalnych metod, takich
+        jak palenie żywcem, wrzucanie do studni, tortury i gwałty.</p>
+      </p>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSkloby" aria-labelledby="offcanvasExampleLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <img src="./assets/articles/pacyfikacja3.webp" class="katyn1_img" alt="">
+    <div class="content">
+      <h3>Pacyfikacja wsi</h3>
+      <p>
+        Jednym z elementów terroru stosowanego względem polskiej ludności na okupowanych przez Niemców ziemiach były
+        pacyfikacje polskich miejscowości, szczególnie wsi. Przez pacyfikację rozumie się zbrojne stłumienie buntu, ale
+        również użycie siły do zlikwidowania konkretnego punktu, często bez stawiania oporu przez zaatakowanych.
+        Specyfika niemieckiej okupacji i sposób przeprowadzania pacyfikacji polskich wsi wskazują raczej na zaplanowaną
+        działalność eksterminacyjną i terrorystyczną wymierzoną najczęściej w niewinną i bezbronną ludność cywilną.
+      </p>
+      <p>Jeszcze w trakcie trwania kampanii wrześniowej niemieckie wojska dokonały fizycznej likwidacji dużych skupisk
+        ludności m.in. w Złoczewie czy Torzeńcu. Zamordowano tam kilkuset Polaków, a za zbrodnie odpowiedzialni byli
+        żołnierze Wehrmachtu. W późniejszym czasie ciężar odpowiedzialności przeniósł się na siły SS, Gestapo oraz
+        Einsatzgruppen, które uczestniczyły w mordach polskiej ludności. Łącznie w okresie kampanii wrześniowej
+        spalonych zostało ponad 400 polskich wsi. Do jednej z najbardziej znanych akcji doszło w Wawrze, gdzie w grudniu
+        1939 roku Niemcy rozstrzelali ponad 100 mieszkańców w odwecie za zabójstwo dwóch obywateli niemieckich przez
+        miejscowych kryminalistów.</p>
+    </div>
+    <img src="./assets/articles/pacyfikacja2.webp" alt="">
+    <div class="content">
+      <p>Najczęściej ataki na polskie wsie były nieuzasadnione i nie znajdowały wytłumaczenia w ówczesnej sytuacji
+        strategicznej. Eksterminacja Polaków odbywała się z pogwałceniem konwencji wojennych, w tym konwencji haskiej,
+        której sygnatariuszem było państwo niemieckie. Przyczyn tego typu działań należy upatrywać zarówno w celowej
+        polityce okupanta polegającej na fizycznym wyniszczaniu i zastraszaniu polskiej ludności, jak również
+        prawdziwych i fałszywych doniesieniach o wsparciu, którego miejscowa ludność miała dostarczać członkom
+        podziemnego ruchu oporu. Tego typu pacyfikacje dotknęły m.in. ziemi świętokrzyskiej w związku z działalnością
+        oddziału majora Dobrzańskiego. W kwietniu 1940 roku Niemcy wymordowali ludność wioski Skłoby. Ofiarą pacyfikacji
+        padło 265 ludzi. </p>
+
+      <p>W późniejszym okresie pacyfikacje polskich wsi notowano przede wszystkim na Zamojszczyźnie, gdzie Niemcy
+        prowadzili akcję masowych wysiedleń Polaków, przygotowując te tereny pod przyszłą kolonizację. Wobec oporu
+        ludności cywilnej oraz wsparcia, którego udzielało im Polskie Podziemie Niemcy dokonywali niezwykle krwawych
+        ataków na wioski, gdzie najczęściej gromadzili się nieuzbrojeni mieszkańcy, w tym kobiety, dzieci i starcy.
+        Wśród form pacyfikacji wyróżnić należy masowe rozstrzeliwania oraz podpalenia (ludność tłoczono i zamykano w
+        budynkach, które następnie podpalano, co pozwalało okupantowi zaoszczędzić amunicję).</p>
+    </div>
+    <img src="./assets/articles/pacyfikacja1.webp" alt="">
+    <div class="content">
+      <p>Trudno jednoznacznie ocenić, ile polskich wsi padło ofiarą represji ze strony niemieckiej. Niektóre ataki
+        jedynie nosiły znamiona pacyfikacji, co utrudnia kwalifikację poszczególnych działań. Należy jednak podkreślić,
+        że terror wobec mieszkańców polskich wsi był powszechny i stanowił jeden z charakterystycznych elementów
+        niemieckiej polityki względem okupowanych ziem. Wobec różnych szacunków przyjąć należy, że pacyfikacje objęły co
+        najmniej 800-900 wsi, których ofiarą padło kilkadziesiąt tysięcy zabitych. Dla przykładu: w czerwcu 1943 roku
+        wybito ludność wioski Sochy (183 osoby); w lutym 1944 roku Niemcy dokonali pacyfikacji ziemi borowskiej (m.in.
+        Borów, Szczecyn), gdzie zabito blisko 1000 osób, z czego połowę mogły stanowić dzieci i kobiety; we wrześniu
+        1944 roku wymordowali ludność wioski Lipniak-Majorat i okolic, zabijając ok. 450 ludzi. To tylko wybrane,
+        nieliczne przypadki, które ilustrują jednak skalę, rozmach i charakter akcji pacyfikacyjnych.</p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
