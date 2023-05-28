@@ -3,11 +3,11 @@ $(document).ready(function () {
      var tooltipInstances = tooltips.map(function(tooltip) {
           return new bootstrap.Tooltip(tooltip);
      });
-     if (!window.matchMedia || (window.matchMedia("(max-width: 767px)").matches)) {
-          tooltipInstances.forEach(element => {
-               element.show();
-          });
-      }
+     // if (!window.matchMedia || (window.matchMedia("(max-width: 767px)").matches)) {
+     //      tooltipInstances.forEach(element => {
+     //           element.show();
+     //      });
+     //  }
 
      var mapWrapper = $('#map-wrapper');
      var mapContainer = $('#map-container');
