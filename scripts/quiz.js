@@ -5,160 +5,160 @@ let quiz = [
     {
         content: "Na co wskazuje sposób przeprowadzania przez Niemców pacyfikacji wsi?",
         answers: [
-            "Zbrojne stłumienie buntu",
-            "Likwidacja konkretnych punktów",
-            "Zaplanowana działalność eksterminacyjna",
-            "Brak stawiania oporu przez zaatakowanych"
+            "A) Zbrojne stłumienie buntu",
+            "B) Likwidacja konkretnych punktów",
+            "C) Zaplanowana działalność eksterminacyjna",
+            "D) Brak stawiania oporu przez zaatakowanych"
         ],
         correct: 2
     }, 
     {
         content: "Jakie były przyczyny pacyfikacji polskich wsi?",
         answers: [
-            "Celowa polityka okupanta",
-            "Doniesienia o wsparciu dla ruchu oporu",
-            "Prawdziwe i fałszywe informacje",
-            "Wszystkie wymienione odpowiedzi"
+            "A) Celowa polityka okupanta",
+            "B) Doniesienia o wsparciu dla ruchu oporu",
+            "C) Prawdziwe i fałszywe informacje",
+            "D) Wszystkie wymienione odpowiedzi"
         ],
         correct: 3
     },
     {
         content: "Gdzie w późniejszym okresie wojny szczególnie często występowały pacyfikacje polskich wsi?",
         answers: [
-            "Ziemia świętokrzyska",
-            "Zamojszczyzna",
-            "Wawer",
-            "Torzeńec"
+            "A) Ziemia świętokrzyska",
+            "B) Zamojszczyzna",
+            "C) Wawer",
+            "D) Torzeńec"
         ],
         correct: 1
     },
     {
         content: "Jak ocenić skalę pacyfikacji polskich wsi przez Niemców?",
         answers: [
-            "Około 100 wsi padło ofiarą represji",
-            "Około 500 wsi padło ofiarą represji",
-            "Około 800-900 wsi padło ofiarą represji",
-            "Ponad 1000 wsi padło ofiarą represji"
+            "A) Około 100 wsi padło ofiarą represji",
+            "B) Około 500 wsi padło ofiarą represji",
+            "C) Około 800-900 wsi padło ofiarą represji",
+            "D) Ponad 1000 wsi padło ofiarą represji"
         ],
         correct: 2
     },
     {
         content: "Jakie było główne powód dla zbrodni katyńskiej?",
         answers: [
-            "Zapewnienie bezpieczeństwa polskim jeńcom wojennym",
-            "Eliminacja polskiej inteligencji i potencjalnej opozycji",
-            "Ochrona praw człowieka i demokracji",
-            "Zaspokojenie niemieckich żądań"
+            "A) Zapewnienie bezpieczeństwa polskim jeńcom wojennym",
+            "B) Eliminacja polskiej inteligencji i potencjalnej opozycji",
+            "C) Ochrona praw człowieka i demokracji",
+            "D) Zaspokojenie niemieckich żądań"
         ],
         correct: 1
     },
     {
         content: "Kto przeprowadził egzekucje w ramach zbrodni katyńskiej?",
         answers: [
-            "Niemieccy okupanci",
-            "Polskie oddziały partyzanckie",
-            "Sowiecka policja polityczna NKWD",
-            "Ukraińscy nacjonaliści"
+            "A) Niemieccy okupanci",
+            "B) Polskie oddziały partyzanckie",
+            "C) Sowiecka policja polityczna NKWD",
+            "D) Ukraińscy nacjonaliści"
         ],
         correct: 2
     },
     {
         content: "Jakie było stanowisko Związku Radzieckiego w sprawie zbrodni katyńskiej po odkryciu masowych grobów przez Niemców?",
         answers: [
-            "Przyznanie odpowiedzialności NKWD za masakrę",
-            "Zaprzeczenie odpowiedzialności i oskarżenie Niemców",
-            "Współpraca z międzynarodową komisją śledczą",
-            "Złożenie przeprosin Polsce"
+            "A) Przyznanie odpowiedzialności NKWD za masakrę",
+            "B) Zaprzeczenie odpowiedzialności i oskarżenie Niemców",
+            "C) Współpraca z międzynarodową komisją śledczą",
+            "D) Złożenie przeprosin Polsce"
         ],
         correct: 1
     },
     {
         content: "Kiedy ujawniono dokumenty potwierdzające odpowiedzialność NKWD za zbrodnię katyńską?",
         answers: [
-            "W 1990 roku po rozpadzie Związku Radzieckiego",
-            "W 1943 roku, po odkryciu grobów przez Niemców",
-            "W 1945 roku po zakończeniu II wojny światowej",
-            "W 1960 roku po traktacie polsko-radzieckim"
+            "A) W 1990 roku po rozpadzie Związku Radzieckiego",
+            "B) W 1943 roku, po odkryciu grobów przez Niemców",
+            "C) W 1945 roku po zakończeniu II wojny światowej",
+            "D) W 1960 roku po traktacie polsko-radzieckim"
         ],
         correct: 0
     },
     {
         content: "Jakie było dokładne miejsce położenia obozu Auschwitz-Birkenau?",
         answers: [
-            "Kraków, Polska",
-            "Monachium, Niemcy",
-            "Oświęcim, Polska",
-            "Berlin, Niemcy"
+            "A) Kraków, Polska",
+            "B) Monachium, Niemcy",
+            "C) Oświęcim, Polska",
+            "D) Berlin, Niemcy"
         ],
         correct: 2
     },
     {
         content: "Jak nazywał się dowódca obozu Auschwitz-Birkenau?",
         answers: [
-            "Adolf Eichmann",
-            "Heinrich Himmler",
-            "Rudolf Höss",
-            "Joseph Mengele"
+            "A) Adolf Eichmann",
+            "B) Heinrich Himmler",
+            "C) Rudolf Höss",
+            "D) Joseph Mengele"
         ],
         correct: 2
     },
     {
         content: "Jaka metoda została głownie stosowana do mordowania więźniów w Auschwitz-Birkenau?",
         answers: [
-            "Zastrzyki trucizną",
-            "Powieszenie",
-            "Strzał w tył głowy",
-            "Komory gazowe"
+            "A) Zastrzyki trucizną",
+            "B) Powieszenie",
+            "C) Strzał w tył głowy",
+            "D) Komory gazowe"
         ],
         correct: 3
     },
     {
         content: "Która z tych grup więźniów była zazwyczaj kierowana bezpośrednio do komór gazowych po przybyciu do Auschwitz-Birkenau?",
         answers: [
-            "Kobiety w ciąży",
-            "Dzieci",
-            "Mężczyźni",
-            "Więźniowie polityczni"
+            "A) Kobiety w ciąży",
+            "B) Dzieci",
+            "C) Mężczyźni",
+            "D) Więźniowie polityczni"
         ],
         correct: 1
     },
     {
         content: "Kto był odpowiedzialny za Zbrodnię Wołyńską?",
         answers: [
-            "Armia Czerwona",
-            "Niemcy",
-            "Ukraińska Armia Powstańcza (UPA)",
-            "Polska Armia Krajowa (AK)"
+            "A) Armia Czerwona",
+            "B) Niemcy",
+            "C) Ukraińska Armia Powstańcza (UPA)",
+            "D) Polska Armia Krajowa (AK)"
         ],
         correct: 2
     },
     {
         content: "Jaka była skala ofiar Zbrodni Wołyńskiej?",
         answers: [
-            "Około 10 tysięcy",
-            "Około 50 tysięcy",
-            "Około 100 tysięcy",
-            "Około 500 tysięcy"
+            "A) Około 10 tysięcy",
+            "B) Około 50 tysięcy",
+            "C) Około 100 tysięcy",
+            "D) Około 500 tysięcy"
         ],
         correct: 2
     },
     {
         content: "W którym roku rozpoczęły się masowe mordy podczas Zbrodni Wołyńskiej?",
         answers: [
-            "1940",
-            "1941",
-            "1942",
-            "1943"
+            "A) 1940",
+            "B) 1941",
+            "C) 1942",
+            "D) 1943"
         ],
         correct: 3
     },
     {
         content: "Jakie było główne zaangażowanie OUN-UPA w zbrodnie?",
         answers: [
-            "Wymordowanie i wypędzenie Polaków",
-            "Walka o niepodległość Ukrainy",
-            "Obrona przed niemiecką okupacją",
-            "Walka z Armią Czerwoną"
+            "A) Wymordowanie i wypędzenie Polaków",
+            "B) Walka o niepodległość Ukrainy",
+            "C) Obrona przed niemiecką okupacją",
+            "D) Walka z Armią Czerwoną"
         ],
         correct: 0
     }
@@ -189,7 +189,7 @@ $(function () {
 
         quiz_d.append(questionElement);
     });
-
+    add_radio_checks();
     quiz_d.append("<button onclick=\"quiz_check()\">Sprawdz odpowiedzi</button>")
 })
 
@@ -207,6 +207,30 @@ function quiz_check() {
     });
 
     alert("Your score: " + score + "/" + questions.length);
+}
+
+function add_radio_checks() {
+  // Get all answer wrappers
+  const answerWrappers = document.querySelectorAll('.answer-wrapper');
+
+  // Add click event listeners to each answer wrapper
+  answerWrappers.forEach((answerWrapper) => {
+    answerWrapper.addEventListener('click', () => {
+      // Find the radio button inside the clicked answer wrapper
+      const radioButton = answerWrapper.querySelector('.answer-input');
+
+      // Check the radio button
+      radioButton.checked = true;
+
+      // Remove 'checked' class from all answer wrappers
+      answerWrapper.parentElement.childNodes.forEach((wrapper) => {
+        wrapper.classList.remove('checked');
+      });
+
+      // Add 'checked' class to the clicked answer wrapper
+      answerWrapper.classList.add('checked');
+    });
+  });
 }
 
 function generateRandomUniqueNumbers(count, value_ceil) {
