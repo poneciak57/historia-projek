@@ -200,6 +200,15 @@ h6 {
      }
 }
 
+/* Custom CSS for always-show-tooltip class */
+@media (max-width: 767px) {
+     .always-show-tooltip [data-bs-toggle="tooltip"] {
+       display: none;
+       visibility: visible;
+       opacity: 1;
+     }
+   }
+
 .pin {
      position: absolute;
      /* width: 15px;
@@ -215,22 +224,22 @@ h6 {
 }
 
 .katyn {
-     top: 33%;
+     top: 30.5%;
      left: 74%;
 }
 
 .oswiecim {
-     top: 77%;
+     top: 74.5%;
      left: 42.9%;
 }
 
 .wolyn {
-     top: 70.3%;
+     top: 67.8%;
      left: 65%;
 }
 
 .skloby {
-     top: 65%;
+     top: 62.5%;
      left: 46.3%;
 }
 

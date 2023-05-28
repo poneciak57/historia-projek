@@ -1,4 +1,14 @@
 $(document).ready(function () {
+     var tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+     var tooltipInstances = tooltips.map(function(tooltip) {
+          return new bootstrap.Tooltip(tooltip);
+     });
+     if (!window.matchMedia || (window.matchMedia("(max-width: 767px)").matches)) {
+          tooltipInstances.forEach(element => {
+               element.show();
+          });
+      }
+
      var mapWrapper = $('#map-wrapper');
      var mapContainer = $('#map-container');
      var mapImage = $('#map-image');
