@@ -1,5 +1,5 @@
 
-const QUESTION_COUNT = 4;
+const QUESTION_COUNT = 10;
 
 let quiz = [
     {
@@ -11,7 +11,7 @@ let quiz = [
             "D) Brak stawiania oporu przez zaatakowanych"
         ],
         correct: 2
-    }, 
+    },
     {
         content: "Jakie były przyczyny pacyfikacji polskich wsi?",
         answers: [
@@ -170,7 +170,7 @@ $(function () {
 
     let quiz_d = $("#quiz");
 
-    generateRandomUniqueNumbers(QUESTION_COUNT, quiz.length-1).forEach((question_id, index) => {
+    generateRandomUniqueNumbers(QUESTION_COUNT, quiz.length - 1).forEach((question_id, index) => {
 
         let answers = "";
 
@@ -190,7 +190,7 @@ $(function () {
         quiz_d.append(questionElement);
     });
     add_radio_checks();
-    quiz_d.append("<button onclick=\"quiz_check()\">Sprawdz odpowiedzi</button>")
+    quiz_d.append("<button onclick=\"quiz_check()\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\">Sprawdz odpowiedzi</button>")
 })
 
 function quiz_check() {
@@ -206,49 +206,52 @@ function quiz_check() {
         }
     });
 
-    alert("Your score: " + score + "/" + questions.length);
+    $("#result").text("Twój wynik to " + score + "/10");
+
+    // alert("Your score: " + score + "/" + questions.length);
+
 }
 
 function add_radio_checks() {
-  // Get all answer wrappers
-  const answerWrappers = document.querySelectorAll('.answer-wrapper');
+    // Get all answer wrappers
+    const answerWrappers = document.querySelectorAll('.answer-wrapper');
 
-  // Add click event listeners to each answer wrapper
-  answerWrappers.forEach((answerWrapper) => {
-    answerWrapper.addEventListener('click', () => {
-      // Find the radio button inside the clicked answer wrapper
-      const radioButton = answerWrapper.querySelector('.answer-input');
+    // Add click event listeners to each answer wrapper
+    answerWrappers.forEach((answerWrapper) => {
+        answerWrapper.addEventListener('click', () => {
+            // Find the radio button inside the clicked answer wrapper
+            const radioButton = answerWrapper.querySelector('.answer-input');
 
-      // Check the radio button
-      radioButton.checked = true;
+            // Check the radio button
+            radioButton.checked = true;
 
-      // Remove 'checked' class from all answer wrappers
-      answerWrapper.parentElement.childNodes.forEach((wrapper) => {
-        wrapper.classList.remove('checked');
-      });
+            // Remove 'checked' class from all answer wrappers
+            answerWrapper.parentElement.childNodes.forEach((wrapper) => {
+                wrapper.classList.remove('checked');
+            });
 
-      // Add 'checked' class to the clicked answer wrapper
-      answerWrapper.classList.add('checked');
+            // Add 'checked' class to the clicked answer wrapper
+            answerWrapper.classList.add('checked');
+        });
     });
-  });
 }
 
 function generateRandomUniqueNumbers(count, value_ceil) {
     if (count > value_ceil) {
-      console.error("Error: N cannot be greater than K");
-      return [];
+        console.error("Error: N cannot be greater than K");
+        return [];
     }
-  
+
     if (count <= 0) {
-      console.error("Error: N must be a positive integer");
-      return [];
+        console.error("Error: N must be a positive integer");
+        return [];
     }
-  
+
     const numbers = new Set();
     while (numbers.size < count) {
-      const randomNumber = Math.floor(Math.random() * (value_ceil + 1));
-      numbers.add(randomNumber);
+        const randomNumber = Math.floor(Math.random() * (value_ceil + 1));
+        numbers.add(randomNumber);
     }
-  
+
     return Array.from(numbers);
-  }
+}

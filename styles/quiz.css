@@ -11,13 +11,13 @@
 h1,
 p,
 span {
-     background: url(../assets/texture.webp) no-repeat center center;
-     background-size: cover;
-     color: #fff;
-     -webkit-text-fill-color: transparent;
-     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     background-clip: text;
+    background: url(../assets/texture.webp) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 * {
@@ -32,9 +32,9 @@ body {
 .quiz-title {
     margin: 3vh 0;
     font-family: 'Franklin Gothic', sans-serif;
-     font-size: 60px;
-     text-transform: uppercase;
-     letter-spacing: 0.04em;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .main-container {
@@ -44,14 +44,15 @@ body {
     min-height: 100vh;
     background-image: url("../assets/background.webp");
     background-size: cover;
+
+    padding: 30px 100px;
 }
 
-.quiz {
-
-}
-
-.question-wrapper {
-
+#quiz {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .question-content {
@@ -74,25 +75,44 @@ body {
     position: relative;
     padding: 10px;
     cursor: pointer;
-  }
+}
 
-  .answer-wrapper.checked {
+.answer-wrapper.checked {
     backdrop-filter: brightness(0.7);
     border-radius: 4px;
-  }
+}
 
-  .answer-wrapper.checked span {
+.answer-wrapper.checked span {
     color: #fff;
     background: none;
     -webkit-text-fill-color: unset;
     -webkit-background-clip: unset;
-     -moz-background-clip: unset;
-     background-clip:unset;
-  }
+    -moz-background-clip: unset;
+    background-clip: unset;
+}
 
-  .answer-input {
+.answer-input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
-  }
+}
 
+button {
+    font-family: 'Franklin Gothic', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    border: 2px solid black;
+    border-image: url("../assets/texture.webp") 30;
+
+    width: fit-content;
+    padding: 10px 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .main-container {
+        padding: 30px 50px;
+    }
+}
