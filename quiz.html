@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="styles/quiz.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
 
-    <!-- SCRIPTS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="scripts/quiz.js" defer></script>
-  </head>
-  <body>
-    <main class="main-container">
-      <h1 class="quiz-title">Teraz czas przetestowac twoja wiedze</h1>
-      <div id="quiz"></div>
-    </main>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles/quiz.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- SCRIPTS -->
 
-    <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
-    <script id="answer-template" type="template">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="scripts/quiz.js" defer></script>
+</head>
+
+<body>
+  <main class="main-container">
+    <h1 class="quiz-title">Test wiedzy</h1>
+    <div id="quiz"></div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Wyniki</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="result">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
+  <script id="answer-template" type="template">
       <div class="answer-wrapper">
         <input type="radio" name="{{name}}" class="answer-input" value="{{value}}"><span>{{content}}</span></br>
       </div>
     </script>
 
-    <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
-    <script id="question-template" type="template">
+  <!-- Do not put any enter, tabs or spaces in the templates next to the values -->
+  <script id="question-template" type="template">
       <div class="question-wrapper">
           <div class="question-content"><p>{{content}}<p></div>
           <div class="question-answers">{{answers}}</div>
           <div class="correct-answer">{{correct}}</div>
       </div>
     </script>
-  </body>
+</body>
+
 </html>
